@@ -9,7 +9,6 @@
     "postinstall": "npm install --prefix frontend",
     "json:items-server": "json-server --watch items.json --port 3000",
     "json:companies-server": "json-server --watch companies.json --port 3001",
-    "build": "npm run build",
     "start": "npm start --prefix frontend"
   },
   "repository": {
