@@ -7,8 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "install": "npm install json-server",
     "postinstall": "npm install --prefix frontend",
-    "json:items-server": "json-server --watch items.json --port 3000",
-    "json:companies-server": "json-server --watch companies.json --port 3001",
+    "json:items-server": "json-server --watch items.json --host https://secure-lake-28172.herokuapp.com --port 3000",
+    "json:companies-server": "json-server --watch companies.json --host https://secure-lake-28172.herokuapp.com --port 3001",
     "start": "npm start --prefix frontend"
   },
   "repository": {
