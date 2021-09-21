@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "json:items-server": "json-server --watch items.json --port 3000",
     "json:companies-server": "json-server --watch companies.json --port 3001",
-    "start": "cd frontend npm start"
+    "start": "npm start --prefix frontend"
   },
   "repository": {
     "type": "git",
