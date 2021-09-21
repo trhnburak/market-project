@@ -2,6 +2,10 @@
   "root": "build/",
   "clean_urls": false,
   "routes": {
+<<<<<<< HEAD
     "/**/**": "index.html"
+=======
+    "/**": "index.html"
+>>>>>>> b6c49c037e594fc50d0f4fe72ae21252ffc9cd09
   }
 }
