@@ -7,10 +7,10 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "install": "npm install json-server",
     "postinstall": "npm install --prefix frontend",
-    "json:items-server": "json-server --watch items.json --host secure-lake-28172.herokuapp.com --port 3000",
-    "json:companies-server": "json-server --watch companies.json --host secure-lake-28172.herokuapp.com --port 3001",
-    "start": "npm start --prefix frontend"
+
+    "start": "node server.js && npm start --prefix frontend"
   },
+
   "repository": {
     "type": "git",
     "url": "git+https://github.com/trhnburak/market-project.git"
