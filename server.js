@@ -13,5 +13,6 @@ server.use(middlewares);
 server.use(router);
 server.use(router2);
 
-
+console.log('server listening on port 3000')
 server.listen(port);
+
