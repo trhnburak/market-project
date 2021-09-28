@@ -25,7 +25,7 @@ export const listTags = () => async (dispatch) => {
     type: TAGS_LIST_REQUEST,
   });
   try {
-    const { data }= await Axios.get(`http://localhost:3000/items`);
+    const { data }= await Axios.get(`https://secure-lake-28172.herokuapp.com:4000/items`);
     dispatch({ type: TAGS_LIST_SUCCESS, payload: data });
   } catch (error) {
     dispatch({ type: TAGS_LIST_FAIL, payload: error.message });
