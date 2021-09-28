@@ -13,7 +13,7 @@ export const listProducts = (currentPage) => async (dispatch) => {
     type: PRODUCT_LIST_REQUEST,
   });
   try {
-    const { data } = await Axios.get(`https://secure-lake-28172.herokuapp.com:3000/items?_page=${currentPage}&_limit=16`);
+    const { data } = await Axios.get(`https://secure-lake-28172.herokuapp.com:4000/items?_page=${currentPage}&_limit=16`);
     dispatch({ type: PRODUCT_LIST_SUCCESS, payload: data });
   } catch (error) {
     dispatch({ type: PRODUCT_LIST_FAIL, payload: error.message });
