@@ -10,7 +10,7 @@ export const listCompanies = () => async (dispatch) => {
     type: COMPANY_LIST_REQUEST,
   });
   try {
-    const { data } = await Axios.get('http://localhost:4001/companies');
+    const { data } = await Axios.get('http://localhost:3001/companies');
     dispatch({ type: COMPANY_LIST_SUCCESS, payload: data });
   } catch (error) {
     dispatch({ type: COMPANY_LIST_FAIL, payload: error.message });

@@ -13,7 +13,7 @@ export const listProducts = (currentPage) => async (dispatch) => {
     type: PRODUCT_LIST_REQUEST,
   });
   try {
-    const { data } = await Axios.get(`http://localhost:4000/items?_page=${currentPage}&_limit=16`);
+    const { data } = await Axios.get(`http://localhost:3000/items?_page=${currentPage}&_limit=16`);
     dispatch({ type: PRODUCT_LIST_SUCCESS, payload: data });
   } catch (error) {
     dispatch({ type: PRODUCT_LIST_FAIL, payload: error.message });
@@ -25,7 +25,7 @@ export const listTags = () => async (dispatch) => {
     type: TAGS_LIST_REQUEST,
   });
   try {
-    const { data }= await Axios.get(`http://localhost:4000/items`);
+    const { data }= await Axios.get(`http://localhost:3000/items`);
     dispatch({ type: TAGS_LIST_SUCCESS, payload: data });
   } catch (error) {
     dispatch({ type: TAGS_LIST_FAIL, payload: error.message });
