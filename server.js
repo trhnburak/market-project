@@ -11,6 +11,6 @@ const port = process.env.PORT || 4000;
 server.use(middlewares);
 server.use(router);
 
-console.log(port)
+console.log()
 server.listen(port);
 
